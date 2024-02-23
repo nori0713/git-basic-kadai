@@ -1,0 +1,52 @@
+The most similar command is
+        diff
+        
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> git diff
+On branch main
+nothing to commit, working tree clean
+commit 93b74905ef724255105fde191c07d51b82000809 (HEAD -> main)
+Author: nori0713 <yasuminorihiro0713@gmail.com>
+Date:   Fri Feb 23 10:17:32 2024 +0900
+
+    hello_world.txtを追加
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> git diff
+On branch main
+nothing to commit, working tree clean
+commit 93b74905ef724255105fde191c07d51b82000809 (HEAD -> main)
+Author: nori0713 <yasuminorihiro0713@gmail.com>
+Date:   Fri Feb 23 10:17:32 2024 +0900
+
+    hello_world.txtを追加
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> git add .
+
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> git commit -m "日本語訳を追記"
+[main 256977c] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> git diff HEAD^
+diff --git a/hello_world.txt b/hello_world.txt
+index 30f51a3..5d6755b 100644
+--- a/hello_world.txt
++++ b/hello_world.txt
+@@ -1 +1,2 @@
+-hello, world!
+\ No newline at end of file
++hello, world!
++こんにちは、世界！
+\ No newline at end of file
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> git log hello_world.txt
+commit 256977ce878dc0d9afdf4a4e0d489d17189587f2 (HEAD -> main)
+Author: nori0713 <yasuminorihiro0713@gmail.com>
+Date:   Fri Feb 23 10:26:30 2024 +0900
+
+    日本語訳を追記
+
+commit 93b74905ef724255105fde191c07d51b82000809
+Author: nori0713 <yasuminorihiro0713@gmail.com>
+Date:   Fri Feb 23 10:17:32 2024 +0900
+
+    hello_world.txtを追加
+PS C:\Users\のり\OneDrive\デスクトップ\作業用フォルダ\kadai> 
